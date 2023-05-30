@@ -1,0 +1,15 @@
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\bin\Debug\net6.0\LnzamientoExcepciones.exe
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\bin\Debug\net6.0\LnzamientoExcepciones.deps.json
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\bin\Debug\net6.0\LnzamientoExcepciones.runtimeconfig.json
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\bin\Debug\net6.0\LnzamientoExcepciones.dll
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\bin\Debug\net6.0\LnzamientoExcepciones.pdb
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.AssemblyInfoInputs.cache
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.AssemblyInfo.cs
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.dll
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\refint\LnzamientoExcepciones.dll
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.pdb
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\LnzamientoExcepciones.genruntimeconfig.cache
+C:\Users\Laura Perez\source\repos\LnzamientoExcepciones\LnzamientoExcepciones\obj\Debug\net6.0\ref\LnzamientoExcepciones.dll
