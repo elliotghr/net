@@ -286,7 +286,7 @@ static int suma(int operador1, double operador2) => operador1;
 static int suma(int numero1, int numero2, int numero3) => numero1 + numero2 + numero3;
 ```
 
-## Curso C#. Condicional switch. Vídeo 18
+## Condicional switch. Vídeo 18
 
 Un switch solo puede evaluar
 
@@ -296,7 +296,7 @@ Un switch solo puede evaluar
 
 float y double deben usar IF
 
-## Curso C#. Excepciones I. Vídeo 22
+## Excepciones I. Vídeo 22
 
 usamos try catch y en el catch usamos FormatException, el código no se rompe
 
@@ -328,7 +328,7 @@ if (carnet == "si")
 }
 ```
 
-## Curso C#. Excepciones II. Captura de varias excepciones. Vídeo 23
+## Excepciones II. Captura de varias excepciones. Vídeo 23
 
 Podemos usar varias excepciones con varios bloques catch
 
@@ -372,7 +372,7 @@ catch (Exception e)
 
 ```
 
-## Curso C#. Excepciones III. Conflictos varias excepciones, captura con filtros. V
+## Excepciones III. Conflictos varias excepciones, captura con filtros. V
 
 Para capturar una excepción en concreto agregamos el when y comparamos
 
@@ -396,7 +396,7 @@ catch(FormatException e){
 }
 ```
 
-## Curso C#. Excepciones IV. Lanzamiento de excepciones con throw. Vídeo 25
+## Excepciones IV. Lanzamiento de excepciones con throw. Vídeo 25
 
 Con el siguiente código generamos una excepción con throw new ArgumentOutOfRangeException(); y obligamos a que se utilice un try catch para poder continuar con el código, esto generará un mensaje perosnalizado del error
 
@@ -434,7 +434,7 @@ static void Main(string[] args)
         }
 ```
 
-## Curso C#. POO. ¿Qué es la POO? Vídeo 27
+## POO. ¿Qué es la POO? Vídeo 27
 
 Una variable en la clase es una propiedad
 Una clase tiene propiedades y metodos, de aqui se crean los objetos, los cuales comparten estos datos con sus variaciones correspondientes
@@ -471,7 +471,23 @@ Una clase tiene propiedades y metodos, de aqui se crean los objetos, los cuales 
     }
 ```
 
-## Curso C#. POO III. Encapsulación y convenciones. Vídeo 29
+## POO III. Encapsulación y convenciones. Vídeo 29
+
+La encapsulación es un principio fundamental de la programación orientada a objetos que consiste en agrupar datos y los métodos que operan sobre esos datos en una unidad coherente, conocida como clase. La encapsulación permite ocultar los detalles internos de una clase y proporcionar una interfaz controlada a través de la cual se puede acceder y manipular los datos.
+
+En C#, la encapsulación se logra mediante el uso de modificadores de acceso como public, private, protected, entre otros. Estos modificadores determinan el nivel de acceso que otros componentes del programa tienen a los miembros de una clase (propiedades, campos, métodos, etc.).
+
+Aquí hay algunos conceptos clave relacionados con la encapsulación:
+
+Visibilidad de los miembros: Los miembros de una clase pueden tener diferentes niveles de acceso. El modificador "public" permite que un miembro sea accesible desde cualquier parte del programa, mientras que el modificador "private" restringe el acceso solo dentro de la propia clase. Además, existen los modificadores "protected" (accesible en la clase y en las clases derivadas) e "internal" (accesible dentro del mismo ensamblado).
+
+Propiedades: Las propiedades proporcionan un mecanismo para encapsular los campos de una clase y controlar el acceso a ellos. Permiten establecer reglas y lógica adicional al leer o escribir los valores de los campos. Pueden tener modificadores de acceso para definir quién puede acceder a ellos.
+
+Métodos de acceso: En lugar de acceder directamente a los campos de una clase, se recomienda utilizar métodos de acceso (getters y setters) para obtener y establecer los valores de los campos encapsulados. Esto permite mantener el control sobre cómo se accede y manipula la información contenida en los campos.
+
+Ocultamiento de información: La encapsulación también permite ocultar la implementación interna de una clase y exponer solo los detalles relevantes a través de una interfaz pública. Esto promueve la modularidad y el bajo acoplamiento, ya que los componentes externos no necesitan conocer los detalles internos de la clase, sino que solo interactúan con su interfaz pública.
+
+La encapsulación es importante porque proporciona una capa de abstracción y protección al permitir un control estricto sobre cómo se accede y manipula la información en una clase. Esto facilita el mantenimiento del código, mejora la legibilidad y facilita los cambios futuros en la implementación sin afectar a otros componentes del programa.
 
 Crearemos diferentes modulos en nuestra clase para que no se puedan acceder a ellos desde una clase externa, es una medida de seguridad y buen funcionamiento del sistema
 
@@ -495,7 +511,7 @@ public void cambiaValorEuro(double nuevoValor)
 }
 ```
 
-## Curso C#. POO IV. Constructores. Vídeo 30
+## POO IV. Constructores. Vídeo 30
 
 Cuando creamos un objeto debemos pensar en su estado inicial, aqui se define la plantilla para todos nustros objetos
 El constructor tiene el mismo nombre que la clase y no puede devolver ningun dato
@@ -559,7 +575,9 @@ Para acceder a las propiedades crearemos un método getter que nos permita acced
 
 ### Sobrecarga de constructores
 
-- Es cuando tenemos más de 1 constructor
+La sobrecarga de constructores es un concepto en programación orientada a objetos que permite definir múltiples constructores para una clase, cada uno con diferentes conjuntos de parámetros. Esto significa que una clase puede tener varios constructores con el mismo nombre pero con diferentes listas de argumentos.
+
+La sobrecarga de constructores es útil cuando se desea crear instancias de una clase de diferentes maneras, proporcionando diferentes valores de inicialización o permitiendo diferentes combinaciones de argumentos.
 
 ```php
         {
@@ -583,7 +601,7 @@ Para acceder a las propiedades crearemos un método getter que nos permita acced
         }
 ```
 
-## Curso C#. POO V. Getters y Setters. Vídeo 31
+## POO V. Getters y Setters. Vídeo 31
 
 Un metodo setter establece propiedades a los objetos
 
@@ -615,3 +633,579 @@ public void setExtras(bool climatizador, String tapiceria)
     this.tapiceria = tapiceria;
 }
 ```
+
+## Bucle foreach. Arrays IV. Vídeo 39
+
+```c#
+static void Main(string[] args)
+{
+    int[] arrayTest = { 1, 2, 3 };
+
+    foreach (var item in arrayTest)
+    {
+        Console.WriteLine(item);
+    }
+}
+```
+
+## Herencia. Concepto y explicación teórica. Vídeo 41
+
+En C#, la herencia es un mecanismo que permite crear una clase nueva basada en una clase existente. La clase existente se conoce como clase base o clase padre, y la nueva clase se conoce como clase derivada o clase hija. La herencia permite que la clase derivada herede los miembros (métodos, propiedades, campos) y el comportamiento de la clase base, y luego agregue o modifique estos miembros según sea necesario.
+
+Para definir una clase derivada en C#, se utiliza la palabra clave "class" seguida del nombre de la clase derivada y la palabra clave " : " seguida del nombre de la clase base. Por ejemplo:
+
+```csharp
+class ClaseDerivada : ClaseBase
+{
+    // Miembros adicionales de la clase derivada
+}
+```
+
+La clase derivada puede acceder a los miembros heredados de la clase base, incluyendo sus métodos y propiedades públicas o protegidas. La herencia permite la reutilización de código y la creación de una jerarquía de clases, donde las clases derivadas pueden especializarse y agregar funcionalidad adicional a medida que sea necesario.
+
+Además de heredar los miembros de la clase base, una clase derivada puede sobrescribir (override) los métodos virtuales de la clase base para proporcionar una implementación personalizada. Esto se logra utilizando la palabra clave "override" en la definición del método en la clase derivada.
+
+## Herencia III. Constructores y base. Vídeo 43
+
+Cada clase, ya sea padre o hijo tiene su propio constructor, además, el constructor de la subclase (clase hija) siempre llama al constructor por defecto de la clase padre, esto se hace con la instrucción **:base()**, si se modifica el constructor del padre por uno dado por el desarrollador entonces la intrucción base ya no funciona y deberemos programar la instrucción base de manera manual en cada clase
+
+```c#
+    class Mamiferos
+    {
+        private String nombreSerVivo;
+        //remplazamos el constructor por defecto
+        public Mamiferos(String nombreSerVivo)
+        {
+            this.nombreSerVivo = nombreSerVivo;
+        }
+    }
+
+    class Caballo : Mamiferos
+    {
+        // creamos el constructor de caballo y asignamos la base con el parametro que esperamos recibir
+        public Caballo(String nombreCaballo) : base(nombreCaballo)
+        {
+
+        }
+    }
+```
+
+## Herencia IV. Principio de sustitución. Vídeo 44
+
+El principio de sustitución establece que una instancia de una clase derivada debe ser capaz de sustituir sin problemas a una instancia de su clase base en cualquier contexto en el que se espere una instancia de la clase base.
+
+Cuando se cumple el principio de sustitución, se garantiza que el código que utiliza la clase base también funcionará correctamente con instancias de las clases derivadas, sin necesidad de realizar modificaciones en el código existente.
+
+Para cumplir con el principio de sustitución, es necesario que las clases derivadas se adhieran a las mismas reglas y contratos definidos por su clase base. Esto significa que los métodos sobrescritos en las clases derivadas deben tener el mismo tipo de retorno, la misma lista de parámetros y respetar las mismas precondiciones y postcondiciones establecidas por los métodos de la clase base. En resumen, la clase derivada debe comportarse como una especialización o extensión de la clase base.
+
+```c#
+// principio de sustitución
+Mamiferos animal = new Caballo("2Pak");
+```
+
+## Herencia V. Polimorfismo. Vídeo 45
+
+Es la capacidad de un objeto de tomar diferentes formas y comportarse de manera distinta según el contexto en el que se utilice.
+
+En el contexto del polimorfismo, una referencia de un tipo base puede apuntar a un objeto de su tipo base o a un objeto de cualquiera de sus tipos derivados. Esto significa que se puede tratar a un objeto de una clase derivada como si fuera un objeto de su clase base.
+
+El polimorfismo se logra a través del uso de la herencia y la sobreescritura de métodos. Cuando una clase derivada redefine un método de su clase base utilizando la palabra clave override, se puede invocar ese método redefinido a través de una referencia del tipo base, y el comportamiento adecuado se determinará en tiempo de ejecución.
+
+Aquí hay un ejemplo que ilustra el polimorfismo:
+
+```c#
+public class Animal
+{
+    public virtual void HacerSonido()
+    {
+        Console.WriteLine("El animal hace un sonido genérico.");
+    }
+}
+
+public class Perro : Animal
+{
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El perro ladra.");
+    }
+}
+
+public class Gato : Animal
+{
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El gato maulla.");
+    }
+}
+```
+
+En este ejemplo, la clase Animal es la clase base y las clases Perro y Gato son clases derivadas. Cada una de las clases derivadas sobrescribe el método HacerSonido() de la clase base para proporcionar una implementación específica.
+
+Luego, se puede utilizar el polimorfismo para tratar a un objeto de una clase derivada como un objeto de su clase base:
+
+```c#
+Animal animal1 = new Perro();
+Animal animal2 = new Gato();
+
+animal1.HacerSonido(); // Resultado: "El perro ladra."
+animal2.HacerSonido(); // Resultado: "El gato maulla."
+```
+
+## Herencia VI. Modificador de acceso Protected. Vídeo 46
+
+Lo más normal es declarar una variable o propiedad de la clase en private generando encapsulación
+
+- protected es un metodo intermedio, es accesible por la misma clase y por las clases que la hereden
+  En resumen, protected nos va a funcionar cuando necesitemos que los metodos se ejecuten dentro de otros metodos de ciertas clases, no llamandolos desde el Main
+
+## Curso C#. Interfaces I. Vídeo 48
+
+En C#, una interfaz es una especificación de un conjunto de métodos, propiedades y eventos que una clase puede implementar. Una interfaz define un contrato que una clase debe cumplir, es decir, establece qué miembros deben estar presentes en la clase que implementa la interfaz y cómo deben ser definidos.
+
+Las interfaces en C# se definen utilizando la palabra clave interface y pueden contener métodos, propiedades, eventos e indexadores, pero no pueden contener implementaciones de código. Aquí tienes un ejemplo de cómo se define una interfaz:
+
+```c#
+public interface IReproducible
+{
+    void Reproducir();
+    string ObtenerInformacion();
+}
+```
+
+En este ejemplo, se ha definido una interfaz llamada IReproducible que especifica dos métodos: Reproducir() y ObtenerInformacion(). Cualquier clase que implemente esta interfaz deberá proporcionar implementaciones concretas para estos métodos.
+
+Para que una clase implemente una interfaz en C#, se utiliza la palabra clave class seguida del nombre de la clase, seguida de la palabra clave :, y finalmente el nombre de la interfaz que se va a implementar. Aquí tienes un ejemplo de una clase que implementa la interfaz IReproducible:
+
+```c#
+public class Reproductor : IReproducible
+{
+    public void Reproducir()
+    {
+        Console.WriteLine("Reproduciendo...");
+    }
+
+    public string ObtenerInformacion()
+    {
+        return "Información del reproductor";
+    }
+}
+```
+
+En este caso, la clase Reproductor implementa la interfaz IReproducible y proporciona implementaciones concretas para los métodos Reproducir() y ObtenerInformacion().
+
+Al implementar una interfaz, una clase puede cumplir múltiples contratos y adquirir funcionalidades adicionales. Esto permite que se aplique el polimorfismo y se utilicen objetos de diferentes clases que implementan la misma interfaz de manera intercambiable.
+
+Las interfaces son útiles para lograr una mayor flexibilidad y extensibilidad en el diseño de software, ya que permiten definir contratos claros y desacoplados entre las clases. También facilitan la implementación de patrones de diseño como la inyección de dependencias y favorecen una mejor modularidad y reutilización del código.
+
+## Curso C#. Interfaces II. Vídeo 49
+
+Si existen dos interfaces con el mismo nombre de metodo entonces especificaremos a que interface pertence
+
+```c#
+// interfaz
+    interface IMamiferosTerrestres
+    {
+        int numeroPatas();
+    }
+    interface ISaltoConPatas
+    {
+        int numeroPatas();
+    }
+// clase
+        class Caballo : Mamiferos, IMamiferosTerrestres, IAnimalesYDeportes, ISaltoConPatas
+    {
+        public Caballo(String nombreCaballo) : base(nombreCaballo)
+        {
+        }
+        // Se elimina el modificador de acceso
+        int IMamiferosTerrestres.numeroPatas()
+        {
+            return 4;
+        }
+        int ISaltoConPatas.numeroPatas()
+        {
+            return 2;
+        }
+    }
+```
+
+## Curso C#. Clases abstractas I. Vídeo 52
+
+Una clase abstracta es una clase que no se puede instanciar directamente, sino que se utiliza como una base para otras clases. Proporciona una estructura común y un conjunto de características que las clases derivadas pueden heredar y ampliar.
+
+En C#, una clase abstracta se declara utilizando la palabra clave abstract. Puede contener miembros abstractos y miembros concretos. Sin embargo, una clase abstracta puede tener al menos un miembro abstracto, que es un miembro sin implementación y debe ser implementado en las clases derivadas.
+
+Aquí hay un ejemplo de cómo se define una clase abstracta en C#:
+
+```csharp
+public abstract class Vehiculo
+{
+    public string Marca { get; set; }
+    public string Modelo { get; set; }
+
+    public abstract void Conducir();
+
+    public void MostrarInformacion()
+    {
+        Console.WriteLine($"Marca: {Marca}, Modelo: {Modelo}");
+    }
+}
+```
+
+En este ejemplo, la clase Vehiculo es una clase abstracta que tiene dos propiedades (Marca y Modelo) y dos métodos. El método Conducir() es un método abstracto, mientras que el método MostrarInformacion() es un método concreto.
+
+Cuando una clase hereda de una clase abstracta, debe proporcionar una implementación para todos los miembros abstractos de la clase base. Aquí hay un ejemplo de una clase derivada que implementa la clase abstracta Vehiculo:
+
+```csharp
+public class Coche : Vehiculo
+{
+    public override void Conducir()
+    {
+        Console.WriteLine("Conduciendo el coche...");
+    }
+}
+```
+
+En este caso, la clase Coche hereda de la clase abstracta Vehiculo y proporciona una implementación para el método Conducir(). La clase Coche ahora se puede instanciar y utilizar.
+
+Las clases abstractas son útiles cuando se desea proporcionar una implementación base común para un grupo de clases relacionadas, pero se espera que cada clase derivada proporcione su propia implementación para ciertos métodos específicos.
+
+Algunas características clave de las clases abstractas son:
+
+- No se pueden crear instancias directamente de una clase abstracta.
+- Pueden contener métodos abstractos, que deben ser implementados por las clases derivadas.
+- Pueden contener métodos concretos, que ya tienen una implementación.
+- Pueden contener propiedades, campos y eventos.
+- Pueden ser heredadas por clases derivadas.
+
+En resumen, una clase abstracta es una clase base que proporciona una estructura común y puede contener métodos abstractos y concretos. Sirve como una plantilla para las clases derivadas y proporciona una manera de definir comportamientos comunes y obligar a las clases derivadas a implementar ciertos métodos.
+
+## Curso C#. Clases selladas (sealed classes). Vídeo 54
+
+En C#, una clase sellada (sealed class) es una clase que no se puede heredar. Es decir, no se puede crear una clase derivada a partir de una clase sellada.
+
+Para definir una clase sellada, se utiliza la palabra clave sealed antes de la declaración de la clase. Aquí tienes un ejemplo:
+
+```csharp
+public sealed class MiClaseSellada
+{
+    // Código de la clase
+}
+```
+
+En este caso, la clase MiClaseSellada está marcada como sellada, lo que significa que no se puede heredar de ella. No se puede usar la palabra clave abstract en conjunto con sealed, ya que son conceptos opuestos.
+
+La intención de una clase sellada es evitar que se extienda o se cree una clase derivada. Esto se puede utilizar por varias razones, como mantener un control estricto sobre la funcionalidad de la clase, evitar problemas de diseño o proteger la implementación interna de una clase.
+
+Es importante tener en cuenta que las clases selladas aún pueden implementar interfaces y pueden ser instanciadas como cualquier otra clase. Sin embargo, no se puede heredar de ellas.
+
+Algunos puntos clave sobre las clases selladas:
+
+Una clase sellada no puede tener clases derivadas.
+
+- No se pueden utilizar las palabras clave abstract y sealed juntas, ya que son mutuamente excluyentes.
+  -Las clases selladas pueden ser útiles para proteger componentes críticos o finales de la implementación de una clase.
+- Las clases selladas aún pueden implementar interfaces y pueden ser instanciadas normalmente.
+
+En resumen, una clase sellada en C# es una clase que no puede ser heredada. Su declaración con la palabra clave sealed impide que otras clases se deriven de ella. Se utiliza para controlar y restringir la estructura de herencia en una jerarquía de clases.
+
+Esto también aplica para los métodos, lo cual impedirá que se puedan modificar
+
+```c#
+    class Humano : Mamiferos
+    {
+        public Humano(String nombreHumano) : base(nombreHumano)
+        {
+
+        }
+        // Impedimos la modificación del método con sealed
+        public sealed override void pensar()
+        {
+            Console.WriteLine("Soy capaz de pensar ¿?");
+        }
+
+    }
+```
+
+## Curso C#. Properties (Propiedades) I. Vídeo 56
+
+En C#, las properties (propiedades) son miembros de una clase que encapsulan el acceso y la modificación de los datos de un objeto. Proporcionan una forma de definir y controlar cómo se obtienen y establecen los valores de los campos internos de una clase, proporcionando una interfaz para interactuar con esos datos.
+
+Las properties permiten acceder a los datos de una clase de manera controlada, ocultando la implementación interna y protegiendo los campos subyacentes de la clase. Se definen utilizando bloques de código especiales llamados "accessors" (accesores), que especifican la lógica para obtener y establecer el valor de una propiedad.
+
+Aquí tienes un ejemplo de cómo se define una propiedad en C#:
+
+```csharp
+public class Persona
+{
+private string nombre;
+
+    public string Nombre
+    {
+        get { return nombre; }
+        set { nombre = value; }
+    }
+
+}
+```
+
+En este ejemplo, la clase Persona tiene una propiedad llamada Nombre. La propiedad tiene un acceso get (obtener) y un acceso set (establecer) definidos dentro de bloques de código. El acceso get devuelve el valor del campo nombre, mientras que el acceso set asigna un valor al campo nombre.
+
+La propiedad se puede utilizar de la siguiente manera:
+
+```csharp
+Persona persona = new Persona();
+persona.Nombre = "John Doe"; // Establecer el valor de la propiedad
+string nombre = persona.Nombre; // Obtener el valor de la propiedad
+```
+
+En este caso, se utiliza la propiedad Nombre para establecer y obtener el valor del campo nombre de la instancia de Persona.
+
+Las properties también pueden tener modificadores de acceso, lo que permite controlar la visibilidad de la propiedad y restringir su acceso. Por ejemplo:
+
+```csharp
+public class Persona
+{
+    private string nombre;
+
+    public string Nombre
+    {
+        get { return nombre; }
+        private set { nombre = value; }
+    }
+}
+```
+
+En este caso, el acceso set de la propiedad Nombre se ha establecido como privado, lo que significa que solo se puede establecer el valor desde dentro de la clase Persona.
+
+Además de los accesores get y set, las properties también pueden tener solo un accesor get, lo que las convierte en propiedades de solo lectura, o solo un accesor set, lo que las convierte en propiedades de solo escritura.
+
+El uso de properties en lugar de acceder directamente a los campos de una clase proporciona una capa adicional de encapsulación y control sobre los datos de la clase. Además, las properties son una parte fundamental del concepto de programación orientada a objetos y ayudan a mantener un diseño coherente y robusto del código.
+
+## Curso C#. Struct. Vídeo 57
+
+En C#, una struct (estructura) es un tipo de dato de valor que puede contener datos y funciones relacionadas. A diferencia de las clases, que son tipos de referencia, las structs son tipos de valor y se almacenan directamente en la memoria donde se declaran, en lugar de almacenarse en la memoria heap y hacer referencia a través de punteros.
+
+Las structs se definen utilizando la palabra clave struct y se pueden considerar como pequeñas clases que contienen datos y, opcionalmente, métodos asociados. A menudo se utilizan para representar conceptos de valor más simples y livianos, como puntos, fechas o valores numéricos, donde el rendimiento y la eficiencia son importantes.
+
+Aquí tienes un ejemplo de cómo se define una struct en C#:
+
+```csharp
+public struct Punto
+{
+    public int X;
+    public int Y;
+
+    public Punto(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+
+    public void Mover(int deltaX, int deltaY)
+    {
+        X += deltaX;
+        Y += deltaY;
+    }
+}
+```
+
+En este ejemplo, se ha definido una struct llamada Punto que tiene dos campos públicos: X e Y. También se ha definido un constructor y un método Mover() que realiza una modificación en los campos de la struct.
+
+Una vez definida la struct, se puede crear una instancia y acceder a sus campos y métodos de la siguiente manera:
+
+```csharp
+Punto punto = new Punto(3, 5);
+Console.WriteLine($"Posición actual: ({punto.X}, {punto.Y})"); // Resultado: Posición actual: (3, 5)
+punto.Mover(2, -1);
+Console.WriteLine($"Posición actual después de mover: ({punto.X}, {punto.Y})"); // Resultado: Posición actual después de mover: (5, 4)
+```
+
+En este caso, se crea una instancia de la struct Punto y se utilizan sus campos X e Y para representar una posición en un plano cartesiano. Luego, se llama al método Mover() para cambiar la posición del punto.
+
+Algunas características importantes de las structs son:
+
+- Las structs son tipos de valor y se almacenan en la memoria stack.
+- Las structs no admiten herencia, pero pueden implementar interfaces.
+- Las structs no pueden tener un constructor sin parámetros.
+- Las structs no pueden ser nulas (a menos que se utilice el modificador nullable).
+- Las structs son más eficientes en cuanto a rendimiento y uso de memoria en comparación con las clases, pero pueden ser menos flexibles y no admiten características como la herencia y la sobrecarga de operadores.
+
+En resumen, las structs en C# son tipos de valor que se utilizan para representar datos simples y livianos. Son útiles cuando se necesita un tipo de valor eficiente en cuanto a rendimiento y almacenamiento, y no se requieren características complejas como la herencia.
+
+### ¿Cuándo usar Struct?
+
+Puedes considerar el uso de una struct en las siguientes situaciones:
+
+1. Representación de tipos de valor pequeños y livianos: Las structs son adecuadas para representar tipos de valor simples y pequeños, como puntos en un plano, coordenadas, fechas, valores numéricos, colores, etc. Si tienes un tipo de valor que no contiene una gran cantidad de datos y solo necesitas almacenar sus propiedades, una struct puede ser una opción adecuada.
+
+2. Pasar datos por valor: Cuando pasas una struct como argumento a un método o la asignas a otra variable, se realiza una copia de los datos de la struct. Esto puede ser útil en situaciones en las que deseas pasar datos por valor en lugar de por referencia. En contraste, las clases se pasan por referencia.
+
+3. Eficiencia y rendimiento: Las structs se almacenan en la memoria stack y no requieren la asignación de memoria en el heap. Esto puede llevar a una mejor eficiencia en términos de uso de memoria y rendimiento, especialmente cuando trabajas con grandes volúmenes de datos o necesitas un rendimiento optimizado.
+
+4. Inmutabilidad: Si deseas que los objetos sean inmutables, es decir, que no se puedan modificar una vez creados, puedes utilizar structs. Al ser tipos de valor, las structs son inmutables por naturaleza, ya que no se pueden cambiar una vez que se han creado. Esto puede ser útil para garantizar la consistencia de los datos y evitar cambios accidentales.
+
+En general, si estás trabajando con tipos de valor pequeños, necesitas una alta eficiencia y rendimiento, o deseas asegurarte de que los objetos sean inmutables, las structs pueden ser una buena opción.
+
+## Enums
+
+Un enum (enumeración) es un tipo de dato que permite definir un conjunto de constantes con nombre. Un enum define un conjunto de valores que representan opciones o categorías discretas.
+
+Un enum se declara utilizando la palabra clave enum y se puede personalizar con una lista de constantes separadas por comas. Aquí tienes un ejemplo básico de cómo se define un enum en C#:
+
+```csharp
+public enum DiaSemana
+{
+Lunes,
+Martes,
+Miércoles,
+Jueves,
+Viernes,
+Sábado,
+Domingo
+}
+```
+
+En este ejemplo, se ha definido un enum llamado DiaSemana que representa los días de la semana. Cada elemento del enum (Lunes, Martes, Miércoles, etc.) se considera una constante con nombre y se trata como un valor discreto único.
+
+Una vez definido el enum, puedes utilizarlo para declarar variables, asignar valores y realizar comparaciones. Aquí tienes un ejemplo de uso del enum DiaSemana:
+
+```csharp
+DiaSemana diaActual = DiaSemana.Martes;
+Console.WriteLine($"Hoy es {diaActual}"); // Resultado: Hoy es Martes
+
+if (diaActual == DiaSemana.Sábado || diaActual == DiaSemana.Domingo)
+{
+Console.WriteLine("¡Es fin de semana!");
+}
+else
+{
+Console.WriteLine("No es fin de semana.");
+}
+```
+
+En este caso, se declara una variable diaActual del tipo DiaSemana y se le asigna el valor DiaSemana.Martes. Luego se muestra el valor de la variable en la consola. También se utiliza una estructura condicional if para determinar si el día actual es un fin de semana o no.
+
+Algunos puntos clave sobre los enums son:
+
+- Los enums son tipos de valor que representan un conjunto de constantes con nombre.
+- Los elementos de un enum se consideran constantes y se tratan como valores únicos.
+- Los valores predeterminados de un enum se asignan automáticamente en orden ascendente a partir de 0, pero se pueden personalizar asignando valores explícitos.
+- Los enums se pueden utilizar para declarar variables, realizar comparaciones y controlar el flujo del programa.
+- Los enums también se pueden utilizar como parámetros de métodos y propiedades para limitar las opciones de valores aceptados.
+
+En resumen, los enums en C# son tipos de dato que permiten definir un conjunto de constantes con nombre, lo que facilita el manejo de opciones discretas y mejora la legibilidad y el mantenimiento del código. Se utilizan para representar conjuntos predefinidos de valores y proporcionan una forma más intuitiva y semántica de trabajar con opciones discretas.
+
+## Curso C#. Destructores. Vídeo 59
+
+En C#, un destructor es un método especial que se utiliza para liberar recursos o realizar acciones de limpieza antes de que un objeto sea destruido y eliminado de la memoria. Un destructor se define utilizando la sintaxis ~nombreDeClase() y no toma ningún parámetro.
+
+El destructor se ejecuta automáticamente cuando un objeto es eliminado de la memoria, ya sea porque ha quedado fuera del alcance (finalizado su ciclo de vida) o porque ha sido explícitamente destruido utilizando el recolector de basura (garbage collector).
+
+Aquí tienes un ejemplo de cómo se define un destructor en C#:
+
+```csharp
+public class MiClase
+{
+    // Constructor de la clase
+    public MiClase()
+    {
+        // Inicialización de la clase
+    }
+
+    // Destructor de la clase
+    ~MiClase()
+    {
+        // Acciones de limpieza y liberación de recursos
+    }
+}
+```
+
+En este ejemplo, se ha definido un destructor para la clase MiClase. El cuerpo del destructor puede contener cualquier código necesario para liberar recursos, como cerrar archivos, liberar conexiones de red, liberar memoria asignada dinámicamente u otras tareas de limpieza necesarias antes de que el objeto se elimine.
+
+Es importante tener en cuenta que el uso de destructores en C# no es tan común como en otros lenguajes de programación, ya que el recolector de basura (garbage collector) se encarga automáticamente de liberar la memoria asignada a los objetos una vez que ya no están en uso. En general, el recolector de basura maneja la mayoría de los casos de liberación de recursos y limpieza de objetos de manera eficiente.
+
+Sin embargo, hay situaciones específicas en las que puede ser útil utilizar un destructor, como cuando se trabaja con recursos no administrados, como manipuladores de archivos o conexiones a bases de datos, que pueden requerir una liberación explícita.
+
+En resumen, un destructor en C# es un método especial que se ejecuta automáticamente cuando un objeto se destruye y se elimina de la memoria. Se utiliza para realizar acciones de limpieza y liberación de recursos antes de que el objeto sea eliminado. Aunque el uso de destructores no es común en C# debido al recolector de basura, pueden ser útiles en situaciones específicas que involucran recursos no administrados.
+
+### Garbage Collector
+
+El Garbage Collector (recolector de basura) en C# es un componente del entorno de ejecución de .NET que se encarga de administrar la memoria y realizar la recolección automática de objetos no utilizados o inaccesibles. Su objetivo principal es liberar la memoria ocupada por los objetos que ya no son necesarios, lo que ayuda a evitar fugas de memoria y optimiza el uso de recursos en una aplicación.
+
+El Garbage Collector realiza el seguimiento de los objetos creados en tiempo de ejecución y determina cuáles de ellos ya no son accesibles desde el código. Luego, recupera la memoria ocupada por esos objetos para que pueda ser reutilizada en otros fines.
+
+El funcionamiento del Garbage Collector se basa en la detección de objetos no referenciados, es decir, aquellos objetos a los que no se puede acceder directa o indirectamente desde el código en ejecución. Estos objetos se consideran candidatos para ser recolectados y liberados de memoria.
+
+El proceso de recolección de basura consta de varias etapas, incluyendo:
+
+1. Marcado: El Garbage Collector recorre el gráfico de objetos y marca aquellos que son alcanzables y, por lo tanto, deben mantenerse en memoria.
+
+1. Compactación: Se reorganiza la memoria ocupada por los objetos para reducir la fragmentación y mejorar la eficiencia.
+
+1. Liberación: Los objetos no marcados durante el proceso de marcado se consideran no utilizados y se liberan de memoria.
+
+El Garbage Collector opera de manera automática y transparente para el desarrollador. Se encarga de administrar la memoria en segundo plano, liberando los objetos no utilizados en momentos oportunos y sin intervención directa del programador.
+
+La utilización del Garbage Collector en C# proporciona varias ventajas, como:
+
+- Simplifica la administración de memoria, ya que el programador no tiene que preocuparse por liberar manualmente la memoria asignada a los objetos.
+
+- Ayuda a prevenir fugas de memoria, ya que se encarga de liberar objetos que ya no son accesibles.
+
+- Mejora el rendimiento general de la aplicación al evitar la fragmentación de la memoria y al realizar la recolección de basura en momentos óptimos.
+
+Sin embargo, es importante tener en cuenta que el Garbage Collector no es perfecto y no puede liberar memoria instantáneamente. La frecuencia y el momento exacto de la recolección de basura dependen de varios factores, como el uso de memoria, la carga de trabajo del sistema y las políticas de recolección de basura configuradas.
+
+En resumen, el Garbage Collector en C# es un componente del entorno de ejecución de .NET que se encarga de administrar la memoria y realizar la recolección automática de objetos no utilizados. Su función principal es liberar la memoria ocupada por objetos inaccesibles, mejorando el rendimiento y evitando fugas de memoria en una aplicación.
+
+## Curso C#. Genéricos I. Vídeo 60
+
+La programación genérica es un concepto en la programación que permite escribir algoritmos y estructuras de datos que pueden funcionar con diferentes tipos de datos sin tener que ser reescritos o duplicados para cada tipo específico. Es una característica que se encuentra en muchos lenguajes de programación modernos, incluyendo C#.
+
+En lugar de escribir código específico para un tipo de dato en particular, la programación genérica permite definir clases, interfaces, métodos y estructuras de datos que pueden trabajar con tipos de datos genéricos. Estos tipos de datos genéricos se representan mediante parámetros de tipo (también conocidos como tipos genéricos o placeholders) que se reemplazarán con tipos específicos en el momento de su uso.
+
+La programación genérica ofrece varios beneficios, entre ellos:
+
+- Reutilización de código: Al escribir algoritmos y estructuras de datos genéricos, se puede reutilizar el mismo código para diferentes tipos de datos, lo que evita la duplicación de código y simplifica el mantenimiento.
+
+- Flexibilidad y extensibilidad: La programación genérica permite escribir componentes de software que pueden adaptarse a diferentes tipos de datos, lo que brinda flexibilidad y extensibilidad a medida que se agregan nuevos tipos de datos.
+
+- Seguridad en tiempo de compilación: El compilador realiza comprobaciones de tipo en tiempo de compilación para garantizar que los tipos utilizados en la programación genérica sean consistentes y coherentes, lo que ayuda a detectar errores de tipo antes de la ejecución del programa.
+
+- Mejora del rendimiento: Al utilizar tipos genéricos, se evita la necesidad de realizar conversiones de tipo y almacenar objetos en estructuras de datos basadas en referencias, lo que puede resultar en un mejor rendimiento en comparación con el uso de tipos de datos no genéricos.
+
+Un ejemplo común de programación genérica en C# es el uso de las colecciones genéricas proporcionadas por el Framework de Clases de .NET, como List<T>, Dictionary<TKey, TValue>, entre otras. Estas colecciones pueden trabajar con cualquier tipo de dato especificado mediante el parámetro de tipo, lo que las hace flexibles y reutilizables.
+
+Aquí tienes un ejemplo básico de cómo se utiliza la programación genérica en C#:
+
+```csharp
+public class MiClaseGenerica<T>
+{
+    private T dato;
+
+    public MiClaseGenerica(T dato)
+    {
+        this.dato = dato;
+    }
+
+    public T ObtenerDato()
+    {
+        return dato;
+    }
+}
+
+// Uso de la clase genérica
+MiClaseGenerica<int> instancia1 = new MiClaseGenerica<int>(5);
+int dato1 = instancia1.ObtenerDato(); // dato1 será igual a 5
+
+MiClaseGenerica<string> instancia2 = new MiClaseGenerica<string>("Hola");
+string dato2 = instancia2.ObtenerDato(); // dato2 será igual a "Hola"
+```
+En este ejemplo, se ha definido una clase genérica llamada MiClaseGenerica que tiene un parámetro de tipo T. El constructor y el método ObtenerDato trabajan con ese tipo genérico T. Luego, se crean instancias de la clase MiClaseGenerica con diferentes tipos de datos (int y string) y se utilizan los métodos correspondientes.
+
+En resumen, la programación genérica es una técnica que permite escribir código reutilizable que puede trabajar con diferentes tipos de datos. Proporciona flexibilidad, reutilización de código y seguridad en tiempo de compilación. En C#, la programación genérica se logra mediante el uso de parámetros de tipo que se reemplazan por tipos específicos cuando se utilizan los componentes genéricos.
+
+
+
+
