@@ -1507,3 +1507,107 @@ En una interfaz gráfica, se diseñan y organizan visualmente los elementos de l
 A través de las interfaces gráficas, los usuarios pueden interactuar con el software de una manera más intuitiva y visual, lo que mejora la experiencia de usuario y facilita la realización de tareas. Estas interfaces se utilizan en una amplia gama de aplicaciones, desde programas de productividad y herramientas de gestión, hasta aplicaciones de entretenimiento y juegos.
 
 En resumen, las interfaces gráficas son representaciones visuales de un software que permiten a los usuarios interactuar con él de manera intuitiva y amigable. Estas interfaces se implementan utilizando frameworks y bibliotecas específicas, y se basan en eventos y acciones para facilitar la interacción del usuario con el software.
+
+## Curso C#. WPF Interfaces gráficas V. Grid. Vídeo 76
+
+En el contexto de las interfaces gráficas, un grid (o cuadrícula en español) se refiere a un componente o contenedor utilizado para organizar y alinear elementos en forma de filas y columnas. Es una estructura bidimensional que proporciona una disposición ordenada de los elementos visuales dentro de una interfaz gráfica.
+
+Un grid permite dividir el espacio disponible en filas y columnas, creando celdas donde se pueden colocar diferentes elementos, como controles, etiquetas, imágenes o cualquier otro componente de la interfaz. Cada celda de la cuadrícula puede contener uno o varios elementos, y estos elementos pueden ajustarse automáticamente para adaptarse al tamaño de la celda.
+
+La utilización de un grid facilita el diseño y la organización de la interfaz gráfica, ya que permite establecer una estructura flexible y alineada para los elementos visuales. Los grids son especialmente útiles cuando se necesita alinear y distribuir elementos de manera uniforme, como en la creación de formularios, tablas de datos o paneles de control.
+
+En el desarrollo de interfaces gráficas, los frameworks y bibliotecas suelen proporcionar componentes de grid que permiten crear y manipular cuadrículas de manera sencilla. Por ejemplo, en Windows Forms se utiliza el control DataGridView para crear grids, mientras que en WPF se utiliza el control Grid.
+
+Al trabajar con un grid, es posible establecer propiedades como el número de filas y columnas, el tamaño y la alineación de las celdas, y la forma en que los elementos se ajustan y se distribuyen dentro de la cuadrícula. Esto proporciona un mayor control sobre la apariencia y el diseño de la interfaz gráfica.
+
+En resumen, un grid es un componente utilizado en las interfaces gráficas para organizar y alinear elementos en forma de filas y columnas. Proporciona una estructura bidimensional que facilita la disposición ordenada de los elementos visuales y ayuda a crear interfaces gráficas más limpias y estructuradas.
+
+```c#
+<Window x:Class="Primera_Interfaz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Primera_Interfaz"
+        mc:Ignorable="d"
+        Title="Primera Interfaz" Height="450" Width="830">
+
+    <Grid>
+        <!-- El stack panel apila uno debajo del otro todos los componentes -->
+        <!--<StackPanel Name="Panel" Background="#FFA0F1F1" ButtonBase.Click="Panel_Click"> -->
+        <!--<StackPanel Name="Panel" Background="#FFA0F1F1" ButtonBase.Click="Panel_Click" PreviewMouseLeftButtonDown="Panel_PreviewMouseLeftButtonDown"> -->
+        <!--<Button Margin="15" Width="150" HorizontalAlignment="Left">Dale</Button>-->
+        <!--<Button Margin="15" Width="150" HorizontalAlignment="Center" Click="Button_Click">Dale 1</Button>-->
+        <!--<Button Margin="15" Width="150" HorizontalAlignment="Right">Dale 2</Button>-->
+        <!--</StackPanel>-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <!--<ColumnDefinition Width="auto"></ColumnDefinition>-->
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="0" Grid.Row="0" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="1" Grid.Row="0" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="2" Grid.Row="0" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="3" Grid.Row="0" Width="150" Height="50">Botón 1</Button>
+
+            <Button Grid.Column="0" Grid.Row="1" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="1" Grid.Row="1" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="2" Grid.Row="1" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="3" Grid.Row="1" Width="150" Height="50">Botón 1</Button>
+
+            <Button Grid.Column="0" Grid.Row="2" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="1" Grid.Row="2" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="2" Grid.Row="2" Width="150" Height="50">Botón 1</Button>
+            <Button Grid.Column="3" Grid.Row="2" Width="150" Height="50">Botón 1</Button>
+            <!-- Con Gird.ColumnSpan le decimos cuantos bloques debe ocupar-->
+            <!--<TextBlock Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="26" Grid.ColumnSpan="4">Hola Mundo</TextBlock>-->
+            <!--Grid anidado-->
+            <Grid Grid.Column="0" Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Grid.Column="0">b 1</Button>
+                <Button Grid.Column="1">b b</Button>
+                <Button Grid.Column="2">b 1</Button>
+                <Button Grid.Column="0" Grid.Row="1">b 1</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
+```
+
+## Curso C#. WPF Dependency properties I. Vídeo 77
+
+Las Dependency Properties (Propiedades de Dependencia) son un concepto clave en el desarrollo de aplicaciones en plataformas como WPF (Windows Presentation Foundation) y UWP (Universal Windows Platform). Proporcionan una forma eficiente y flexible de administrar y enlazar datos en las interfaces gráficas.
+
+A diferencia de las propiedades regulares, las Dependency Properties tienen la capacidad de establecer relaciones de dependencia con otras propiedades, permitiendo la propagación automática de cambios y la actualización de las interfaces gráficas en respuesta a esos cambios.
+
+Algunas características y ventajas de las Dependency Properties incluyen:
+
+Valor predeterminado: Las Dependency Properties pueden tener un valor predeterminado establecido, lo que permite que las propiedades de un control o elemento tengan un comportamiento predefinido.
+
+1. Valor local: Las Dependency Properties admiten un valor local que puede ser establecido directamente en un objeto. Este valor local tiene prioridad sobre cualquier otro valor establecido de forma más global.
+1. Enlace de datos: Las Dependency Properties permiten enlaces de datos bidireccionales y unidireccionales, lo que facilita la sincronización automática de los datos entre elementos de la interfaz gráfica y fuentes de datos externas.
+1. Propagación de cambios: Cuando se cambia el valor de una Dependency Property, se propaga automáticamente a todos los elementos que tienen una dependencia de esa propiedad. Esto permite la actualización automática de la interfaz gráfica en respuesta a cambios en los datos.
+1. Estilo y animación: Las Dependency Properties son fundamentales para aplicar estilos y animaciones en WPF y UWP. Permiten establecer valores específicos en estilos y activar animaciones basadas en cambios de propiedades.
+
+Para definir una Dependency Property, se utiliza la clase DependencyProperty y se define en una clase de dependencia. La declaración de una Dependency Property incluye el nombre de la propiedad, su tipo, un valor predeterminado y, opcionalmente, métodos de devolución de llamada para notificar cambios en el valor.
+
+En resumen, las Dependency Properties son un mecanismo especializado utilizado en WPF y UWP para administrar y enlazar datos en las interfaces gráficas. Proporcionan una forma flexible y eficiente de propagar cambios, establecer valores predeterminados, enlazar datos y aplicar estilos y animaciones en elementos de la interfaz gráfica.
