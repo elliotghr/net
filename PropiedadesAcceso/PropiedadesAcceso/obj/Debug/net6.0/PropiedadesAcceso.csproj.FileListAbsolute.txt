@@ -1,0 +1,15 @@
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\bin\Debug\net6.0\PropiedadesAcceso.exe
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\bin\Debug\net6.0\PropiedadesAcceso.deps.json
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\bin\Debug\net6.0\PropiedadesAcceso.runtimeconfig.json
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\bin\Debug\net6.0\PropiedadesAcceso.dll
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\bin\Debug\net6.0\PropiedadesAcceso.pdb
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.AssemblyInfoInputs.cache
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.AssemblyInfo.cs
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.dll
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\refint\PropiedadesAcceso.dll
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.pdb
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\PropiedadesAcceso.genruntimeconfig.cache
+C:\Users\Laura Perez\source\repos\PropiedadesAcceso\PropiedadesAcceso\obj\Debug\net6.0\ref\PropiedadesAcceso.dll

@@ -1,0 +1,16 @@
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\bin\Debug\Primera_Interfaz.exe.config
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\bin\Debug\Primera_Interfaz.exe
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\bin\Debug\Primera_Interfaz.pdb
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.csproj.SuggestedBindingRedirects.cache
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\MainWindow.g.cs
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\App.g.cs
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz_MarkupCompile.cache
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz_MarkupCompile.lref
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\MainWindow.baml
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.g.resources
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.Properties.Resources.resources
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.csproj.GenerateResource.cache
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.exe
+C:\Users\Laura Perez\source\repos\Primera_Interfaz\Primera_Interfaz\obj\Debug\Primera_Interfaz.pdb

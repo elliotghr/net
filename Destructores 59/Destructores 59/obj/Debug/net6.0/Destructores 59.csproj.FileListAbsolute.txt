@@ -1,0 +1,15 @@
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\bin\Debug\net6.0\Destructores 59.exe
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\bin\Debug\net6.0\Destructores 59.deps.json
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\bin\Debug\net6.0\Destructores 59.runtimeconfig.json
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\bin\Debug\net6.0\Destructores 59.dll
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\bin\Debug\net6.0\Destructores 59.pdb
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.AssemblyInfoInputs.cache
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.AssemblyInfo.cs
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.dll
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\refint\Destructores 59.dll
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.pdb
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\Destructores 59.genruntimeconfig.cache
+C:\Users\Laura Perez\source\repos\Destructores 59\Destructores 59\obj\Debug\net6.0\ref\Destructores 59.dll

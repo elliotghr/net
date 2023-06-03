@@ -1,0 +1,15 @@
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\bin\Debug\net6.0\EjercicioInterface.exe
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\bin\Debug\net6.0\EjercicioInterface.deps.json
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\bin\Debug\net6.0\EjercicioInterface.runtimeconfig.json
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\bin\Debug\net6.0\EjercicioInterface.dll
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\bin\Debug\net6.0\EjercicioInterface.pdb
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.AssemblyInfoInputs.cache
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.AssemblyInfo.cs
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.dll
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\refint\EjercicioInterface.dll
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.pdb
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\EjercicioInterface.genruntimeconfig.cache
+C:\Users\Laura Perez\source\repos\EjercicioInterface\EjercicioInterface\obj\Debug\net6.0\ref\EjercicioInterface.dll

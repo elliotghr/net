@@ -1,0 +1,15 @@
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\bin\Debug\net6.0\Lambdas.exe
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\bin\Debug\net6.0\Lambdas.deps.json
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\bin\Debug\net6.0\Lambdas.runtimeconfig.json
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\bin\Debug\net6.0\Lambdas.dll
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\bin\Debug\net6.0\Lambdas.pdb
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.AssemblyInfoInputs.cache
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.AssemblyInfo.cs
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.dll
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\refint\Lambdas.dll
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.pdb
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\Lambdas.genruntimeconfig.cache
+C:\Users\Laura Perez\source\repos\Lambdas\Lambdas\obj\Debug\net6.0\ref\Lambdas.dll

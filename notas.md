@@ -1202,10 +1202,308 @@ int dato1 = instancia1.ObtenerDato(); // dato1 será igual a 5
 MiClaseGenerica<string> instancia2 = new MiClaseGenerica<string>("Hola");
 string dato2 = instancia2.ObtenerDato(); // dato2 será igual a "Hola"
 ```
+
 En este ejemplo, se ha definido una clase genérica llamada MiClaseGenerica que tiene un parámetro de tipo T. El constructor y el método ObtenerDato trabajan con ese tipo genérico T. Luego, se crean instancias de la clase MiClaseGenerica con diferentes tipos de datos (int y string) y se utilizan los métodos correspondientes.
 
 En resumen, la programación genérica es una técnica que permite escribir código reutilizable que puede trabajar con diferentes tipos de datos. Proporciona flexibilidad, reutilización de código y seguridad en tiempo de compilación. En C#, la programación genérica se logra mediante el uso de parámetros de tipo que se reemplazan por tipos específicos cuando se utilizan los componentes genéricos.
 
+## Colecciones
 
+En el contexto de la programación, las colecciones se refieren a estructuras de datos que se utilizan para almacenar y organizar elementos de datos de manera eficiente. Las colecciones proporcionan métodos y funcionalidades para agregar, eliminar, buscar y manipular elementos dentro de la estructura de datos.
 
+En C#, el Framework de Clases de .NET proporciona una amplia variedad de colecciones predefinidas que se pueden utilizar para diferentes propósitos. Estas colecciones están disponibles en el espacio de nombres System.Collections y System.Collections.Generic, y algunas de las colecciones más comunes son:
 
+- List<T>: Es una lista dinámica que puede contener elementos de cualquier tipo. Proporciona métodos para agregar, eliminar, buscar y modificar elementos en la lista. Los elementos se almacenan en un orden secuencial y se pueden acceder mediante un índice.
+
+- Dictionary<TKey, TValue>: Es una colección de pares clave-valor, donde cada elemento está asociado a una clave única. Proporciona métodos para agregar, eliminar, buscar y modificar elementos basados en su clave. Los elementos se almacenan de forma no secuencial, pero el acceso a ellos es rápido a través de su clave.
+
+- Queue<T>: Es una estructura de datos de cola en la que los elementos se agregan al final y se eliminan desde el frente en un orden FIFO (primero en entrar, primero en salir). Proporciona métodos para agregar, eliminar y examinar elementos en la cola.
+
+- Stack<T>: Es una estructura de datos de pila en la que los elementos se agregan y eliminan desde la parte superior en un orden LIFO (último en entrar, primero en salir). Proporciona métodos para agregar, eliminar y examinar elementos en la pila.
+
+- HashSet<T>: Es una colección que almacena elementos únicos sin ningún orden en particular. Proporciona métodos eficientes para agregar, eliminar y buscar elementos basados en su contenido.
+
+Estas son solo algunas de las colecciones disponibles en C#, pero hay muchas más, como LinkedList<T>, SortedList<TKey, TValue>, ObservableCollection<T>, etc. Cada colección tiene sus características y se utiliza en diferentes escenarios según los requisitos específicos del programa.
+
+Las colecciones en C# son muy útiles para almacenar y manipular conjuntos de datos de manera eficiente, y proporcionan métodos y propiedades convenientes para trabajar con ellos. Al elegir una colección, es importante considerar el rendimiento, el ordenamiento, la búsqueda y los requisitos de duplicación de elementos para seleccionar la más adecuada para una situación dada.
+
+```swift
+| Colección                  | Descripción                                                                                         |
+|----------------------------|-----------------------------------------------------------------------------------------------------|
+| List<T>                    | Lista dinámica que puede contener elementos de cualquier tipo.                                      |
+| Dictionary<TKey, TValue>   | Colección de pares clave-valor, donde cada elemento está asociado a una clave única.                |
+| Queue<T>                   | Estructura de datos de cola, donde los elementos se agregan al final y se eliminan desde el frente. |
+| Stack<T>                   | Estructura de datos de pila, donde los elementos se agregan y eliminan desde la parte superior.     |
+| HashSet<T>                 | Colección que almacena elementos únicos sin ningún orden en particular.                             |
+| LinkedList<T>              | Lista enlazada que permite la inserción y eliminación eficientes en cualquier posición.              |
+| SortedList<TKey, TValue>   | Colección de pares clave-valor ordenada por la clave.                                                |
+| ObservableCollection<T>   | Colección que notifica los cambios de sus elementos a través de eventos.                             |
+| ConcurrentQueue<T>         | Versión segura para subprocesos de la estructura de cola (Queue<T>).                                |
+| ConcurrentStack<T>         | Versión segura para subprocesos de la estructura de pila (Stack<T>).                                |
+| ConcurrentDictionary<TKey, TValue> | Versión segura para subprocesos de la estructura de diccionario (Dictionary<TKey, TValue>).   |
+```
+
+![Tabla colecciones](/assets/colecciones.png)
+
+Ejemplo:
+
+sintaxis básica de algunas de las colecciones en C# junto con un ejemplo de uso:
+
+List<T>:
+
+```csharp
+List<T> lista = new List<T>();
+lista.Add(elemento);
+elemento = lista[index];
+lista.RemoveAt(index);
+```
+
+Ejemplo:
+
+```csharp
+List<int> numeros = new List<int>();
+numeros.Add(10);
+numeros.Add(20);
+int primerNumero = numeros[0]; // primerNumero será igual a 10
+numeros.RemoveAt(1); // Elimina el elemento en el índice
+```
+
+## Curso C#. Colecciones II LinkedList. Vídeo 64
+
+La LinkedList en C# es una implementación de una lista enlazada, una estructura de datos que consta de nodos que se enlazan entre sí. Cada nodo contiene un valor y una referencia al siguiente nodo en la secuencia.
+
+A diferencia de las listas dinámicas convencionales (como List<T>), donde los elementos se almacenan en ubicaciones contiguas en la memoria, las listas enlazadas no requieren que los elementos estén en posiciones contiguas. Cada nodo de la lista enlazada contiene el valor del elemento y una referencia al siguiente nodo en la secuencia. Esto permite una inserción y eliminación más eficiente en cualquier posición de la lista.
+
+En C#, la LinkedList se encuentra en el espacio de nombres System.Collections.Generic y se utiliza de la siguiente manera:
+
+Las listas enlazadas son útiles en situaciones donde se requieren inserciones y eliminaciones frecuentes en diferentes posiciones de la lista. Sin embargo, pueden requerir un poco más de memoria debido a la necesidad de almacenar las referencias a los nodos en lugar de los elementos en ubicaciones contiguas.
+
+![Link vs LinkedList](/assets/list-vs-linkedlist.png)
+
+## Curso C#. Colecciones IV. Stacks y Dictionary. Vídeo 66
+
+En C#, un diccionario es una colección que almacena pares de elementos clave-valor, donde cada elemento tiene una clave única asociada a un valor. Los diccionarios proporcionan una forma eficiente de acceder y buscar valores utilizando su clave.
+
+En el Framework de Clases de .NET, hay dos implementaciones principales de diccionarios: Dictionary<TKey, TValue> y SortedDictionary<TKey, TValue>.
+
+1. Dictionary<TKey, TValue>:
+
+- Es una implementación de diccionario que no garantiza un orden específico de los elementos.
+- Los elementos se almacenan en función de su clave y se accede a ellos de manera eficiente a través de su clave.
+- La clave debe ser única dentro del diccionario.
+- Proporciona métodos como Add, Remove, ContainsKey y TryGetValue para agregar, eliminar, buscar y obtener valores del diccionario.
+
+1. SortedDictionary<TKey, TValue>:
+
+- Es una implementación de diccionario que mantiene los elementos ordenados en función de su clave.
+- Los elementos se almacenan en un árbol binario de búsqueda y se accede a ellos de manera eficiente a través de su clave.
+- La clave debe ser única dentro del diccionario.
+- Proporciona los mismos métodos que Dictionary<TKey, TValue> pero también ofrece funcionalidades relacionadas con el orden, como First, Last, Range y Comparer.
+
+Ambas implementaciones de diccionarios permiten agregar, eliminar y buscar elementos de manera eficiente utilizando la clave como referencia. Son ampliamente utilizados para mantener relaciones entre datos y proporcionan un acceso rápido a los valores en función de su clave.
+
+Aquí tienes un ejemplo de cómo utilizar Dictionary<TKey, TValue>:
+
+```csharp
+Dictionary<string, int> edades = new Dictionary<string, int>();
+
+// Agregar elementos al diccionario
+edades.Add("Juan", 25);
+edades.Add("María", 30);
+edades["Pedro"] = 35; // Otra forma de agregar elementos
+
+// Acceder a los valores utilizando la clave
+int edadDeJuan = edades["Juan"]; // edadDeJuan será igual a 25
+
+// Verificar si una clave existe en el diccionario
+bool existeMaria = edades.ContainsKey("María");
+
+// Obtener el valor asociado a una clave de forma segura
+int edadDePedro;
+bool existePedro = edades.TryGetValue("Pedro", out edadDePedro);
+
+// Eliminar un elemento del diccionario
+edades.Remove("Juan");
+```
+
+En este ejemplo, se crea un diccionario edades que almacena las edades de diferentes personas utilizando sus nombres como clave. Se agregan elementos utilizando el método Add y también se puede utilizar la sintaxis de indexación para agregar elementos. Se puede acceder a los valores utilizando la clave y se pueden verificar la existencia de una clave utilizando ContainsKey. También se muestra cómo obtener el valor asociado a una clave de forma segura utilizando TryGetValue. Finalmente, se elimina un elemento del diccionario utilizando Remove.
+
+Los diccionarios son útiles cuando se necesita almacenar y acceder a elementos de manera rápida y eficiente utilizando una clave única. Se utilizan en una amplia variedad de escenarios, como la indexación de datos, la creación de diccionarios de sinónimos, la implementación de cachés, entre otros.
+
+## Curso C#. Delegados predicados y lambdas I. Vídeo 67
+
+En C#, un delegado es un tipo de dato que representa referencias a métodos. Es similar a un puntero a función en otros lenguajes de programación. Un delegado permite tratar los métodos como entidades que se pueden asignar a variables y pasar como parámetros, lo que proporciona una forma flexible de invocar métodos.
+
+Los delegados son especialmente útiles en situaciones en las que se desea pasar un método como argumento a otro método, o cuando se necesita implementar eventos y devoluciones de llamada. Permiten encapsular la lógica de un método y proporcionan una forma segura de invocar ese método en un momento posterior.
+
+La declaración de un delegado se realiza utilizando la palabra clave delegate y especificando la firma del método al que el delegado puede hacer referencia. Aquí tienes un ejemplo de declaración de delegado:
+
+```csharp
+delegate void MiDelegado(string mensaje);
+```
+
+En el ejemplo anterior, se declara un delegado llamado MiDelegado que puede hacer referencia a métodos que toman un parámetro de tipo string y no tienen un valor de retorno (void).
+
+Una vez que se ha declarado un delegado, se pueden crear instancias de él y asignarle métodos que coincidan con la firma especificada. Luego, se puede invocar el delegado para ejecutar el método al que hace referencia. Aquí tienes un ejemplo de uso de un delegado:
+
+```csharp
+class Program
+{
+    static void Main()
+    {
+        MiDelegado delegado = Saludar;
+        delegado("Hola, mundo");
+    }
+
+    static void Saludar(string mensaje)
+    {
+        Console.WriteLine(mensaje);
+    }
+}
+```
+
+En este ejemplo, se crea una instancia del delegado MiDelegado y se le asigna el método Saludar. Luego, se invoca el delegado pasando un mensaje como argumento. La salida del programa será "Hola, mundo".
+
+Los delegados también se utilizan comúnmente en el contexto de eventos, donde se pueden utilizar para suscribirse y notificar a los controladores de eventos cuando ocurre un evento específico.
+
+En resumen, los delegados en C# son tipos de datos que representan referencias a métodos y permiten la invocación indirecta de métodos. Proporcionan una forma flexible de pasar métodos como argumentos y se utilizan ampliamente en eventos, devoluciones de llamada y programación orientada a eventos en general.
+
+## Curso C#. Delegados predicados y lambdas II. Vídeo 68
+
+Los delegados predicados en C# son un tipo especial de delegado que se utiliza para representar métodos que toman un argumento y devuelven un valor booleano. Estos delegados se utilizan principalmente para realizar pruebas o evaluaciones de condiciones en colecciones de datos.
+
+En C#, el delegado predicado más comúnmente utilizado es Predicate<T>, que está definido en el espacio de nombres System. La firma del delegado Predicate<T> es la siguiente:
+
+```csharp
+delegate bool Predicate<T>(T obj);
+```
+
+El delegado Predicate<T> toma un argumento de tipo T y devuelve un valor booleano que indica si se cumple o no una determinada condición.
+
+Aquí tienes un ejemplo de cómo se utiliza el delegado predicado Predicate<T> para realizar una prueba en una lista de números:
+
+```csharp
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+
+Predicate<int> esPar = numero => numero % 2 == 0;
+
+List<int> numerosPares = numeros.FindAll(esPar);
+
+foreach (int numero in numerosPares)
+{
+    Console.WriteLine(numero);
+}
+```
+
+En este ejemplo, se crea una lista de números y se define un delegado predicado esPar que verifica si un número es par. Luego, se utiliza el método FindAll de la lista para encontrar todos los números que cumplen la condición del predicado y se almacenan en la lista numerosPares. Finalmente, se muestra cada número par en la consola.
+
+El uso de delegados predicados como Predicate<T> ofrece una forma concisa y flexible de realizar pruebas en colecciones de datos y filtrar elementos en función de una condición específica. Puedes utilizar otros delegados predicados o incluso definir tus propios delegados predicados personalizados para adaptarse a tus necesidades.
+
+## Curso C#. Delegados predicados y lambdas III. Vídeo 69
+
+Las expresiones lambda en C# son funciones anónimas y compactas que se pueden utilizar para crear instancias de delegados o para escribir funciones de una manera más concisa. Las expresiones lambda permiten definir funciones de una línea sin necesidad de declarar un método separado.
+
+La sintaxis básica de una expresión lambda en C# es la siguiente:
+
+```cscsharps
+(input) => expresión
+(parametros) => expresión/bloque de sentencia
+```
+
+Donde input representa los parámetros de la función y expresión es el cuerpo de la función. La expresión lambda se puede asignar a un delegado o utilizar directamente en una llamada a un método.
+
+Aquí tienes un ejemplo de una expresión lambda que calcula el cuadrado de un número:
+
+```csharp
+Func<int, int> calcularCuadrado = x => x * x;
+
+int resultado = calcularCuadrado(5); // resultado será igual a 25
+```
+
+En este ejemplo, se define una expresión lambda x => x \* x que toma un parámetro x y devuelve su cuadrado. La expresión lambda se asigna a un delegado Func<int, int> que toma un entero como argumento y devuelve un entero. Luego, se utiliza el delegado para calcular el cuadrado del número 5, y el resultado se almacena en la variable resultado.
+
+Las expresiones lambda también se pueden utilizar en métodos que aceptan delegados como argumentos, como en el siguiente ejemplo:
+
+```csharp
+List<int> numeros = new List<int> { 1, 2, 3, 4, 5 };
+
+List<int> numerosPares = numeros.FindAll(x => x % 2 == 0);
+
+foreach (int numero in numerosPares)
+{
+    Console.WriteLine(numero);
+}
+```
+
+En este caso, se utiliza una expresión lambda en el método FindAll de la lista numeros para encontrar todos los números pares. La expresión lambda x => x % 2 == 0 verifica si un número es par y se utiliza como criterio de filtrado. Los números que cumplen la condición se almacenan en la lista numerosPares y se muestran en la consola.
+
+Las expresiones lambda proporcionan una forma concisa y legible de escribir funciones en línea y se utilizan ampliamente en C# para mejorar la expresividad del código y simplificar tareas como filtrar, ordenar o transformar datos.
+
+## Curso C#. Expresiones regulares I. Vídeo 70
+
+Las expresiones regulares, también conocidas como regex (del inglés "regular expressions"), son patrones de texto que se utilizan para buscar y manipular cadenas de caracteres de manera eficiente. Son una herramienta poderosa para realizar operaciones de búsqueda, validación y manipulación de texto en diversos contextos, como procesamiento de texto, análisis léxico, validación de formatos, entre otros.
+
+En C#, las expresiones regulares están disponibles a través del espacio de nombres System.Text.RegularExpressions. Este espacio de nombres proporciona la clase Regex, que se utiliza para trabajar con expresiones regulares.
+
+Una expresión regular se compone de caracteres literales y metacaracteres especiales que definen un patrón de búsqueda. Estos patrones pueden incluir letras, dígitos, caracteres especiales, operadores de cuantificación y constructos de agrupación. Aquí hay algunos ejemplos de metacaracteres comunes:
+
+- .: Coincide con cualquier carácter, excepto nueva línea.
+- ^: Coincide con el inicio de una línea.
+- $: Coincide con el final de una línea.
+- \d: Coincide con un dígito.
+- \w: Coincide con un carácter alfanumérico o guion bajo.
+- [ ]: Coincide con un solo carácter que está dentro del rango o conjunto especificado.
+- +: Coincide con uno o más repeticiones del elemento anterior.
+- \*: Coincide con cero o más repeticiones del elemento anterior.
+- ?: Coincide con cero o una repetición del elemento anterior.
+- |: Coincide con una de las opciones separadas por el operador.
+
+A continuación se muestra un ejemplo de cómo utilizar la clase Regex para realizar una búsqueda y reemplazo utilizando una expresión regular en C#:
+
+```csharp
+using System;
+using System.Text.RegularExpressions;
+
+class Program
+{
+static void Main()
+{
+string texto = "Hola, mi número de teléfono es 123-456-7890. Llámame.";
+
+        // Buscar coincidencias de un número de teléfono en el texto
+        string patron = @"\d{3}-\d{3}-\d{4}";
+        MatchCollection coincidencias = Regex.Matches(texto, patron);
+
+        // Mostrar las coincidencias encontradas
+        foreach (Match coincidencia in coincidencias)
+        {
+            Console.WriteLine(coincidencia.Value);
+        }
+
+        // Reemplazar el número de teléfono por "XXXXX"
+        string resultado = Regex.Replace(texto, patron, "XXXXX");
+        Console.WriteLine(resultado);
+    }
+
+}
+```
+
+En este ejemplo, se utiliza la expresión regular \d{3}-\d{3}-\d{4} para buscar coincidencias de un número de teléfono en un texto. La clase Regex y el método Matches se utilizan para buscar todas las coincidencias y almacenarlas en una colección de Match. Luego, se utiliza un bucle foreach para mostrar cada coincidencia encontrada.
+
+Además, se utiliza el método Replace de la clase Regex para reemplazar el número de teléfono encontrado por "XXXXX". El resultado del reemplazo se almacena en la variable resultado y se muestra en la consola.
+
+Las expresiones regulares son una herramienta poderosa para manipular y buscar texto de manera eficiente. Sin embargo, pueden volverse complejas rápidamente, especialmente cuando se utilizan patrones más elaborados. Por lo tanto, es recomendable aprender y practicar para aprovechar al máximo su potencial.
+
+## Curso C#. WPF Interfaces gráficas I. Vídeo 72
+
+Las interfaces gráficas, también conocidas como GUI (del inglés "Graphical User Interface"), son formas visuales de interactuar con un programa de software. Proporcionan elementos gráficos, como ventanas, botones, menús y cuadros de diálogo, que permiten a los usuarios interactuar con el software de una manera más intuitiva y amigable.
+
+Las interfaces gráficas facilitan la interacción con el software al proporcionar una representación visual de las funcionalidades y opciones disponibles. Los usuarios pueden realizar acciones como hacer clic en botones, ingresar datos en campos de texto, seleccionar elementos de una lista, arrastrar y soltar elementos, entre otras acciones, para interactuar con el programa.
+
+En el desarrollo de software, las interfaces gráficas se implementan utilizando bibliotecas o frameworks específicos que proporcionan componentes y herramientas para construir interfaces de usuario. En el caso de C#, algunos de los frameworks más comunes para el desarrollo de interfaces gráficas son Windows Forms (WinForms) y Windows Presentation Foundation (WPF).
+
+En una interfaz gráfica, se diseñan y organizan visualmente los elementos de la interfaz, y se definen las acciones y comportamientos que se desencadenarán al interactuar con esos elementos. Esto se logra utilizando un enfoque basado en eventos, donde se asocian acciones o métodos a eventos específicos, como hacer clic en un botón o cambiar el valor de un campo.
+
+A través de las interfaces gráficas, los usuarios pueden interactuar con el software de una manera más intuitiva y visual, lo que mejora la experiencia de usuario y facilita la realización de tareas. Estas interfaces se utilizan en una amplia gama de aplicaciones, desde programas de productividad y herramientas de gestión, hasta aplicaciones de entretenimiento y juegos.
+
+En resumen, las interfaces gráficas son representaciones visuales de un software que permiten a los usuarios interactuar con él de manera intuitiva y amigable. Estas interfaces se implementan utilizando frameworks y bibliotecas específicas, y se basan en eventos y acciones para facilitar la interacción del usuario con el software.

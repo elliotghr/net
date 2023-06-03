@@ -1,0 +1,15 @@
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\bin\Debug\net6.0\DelegadosPredicados.exe
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\bin\Debug\net6.0\DelegadosPredicados.deps.json
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\bin\Debug\net6.0\DelegadosPredicados.runtimeconfig.json
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\bin\Debug\net6.0\DelegadosPredicados.dll
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\bin\Debug\net6.0\DelegadosPredicados.pdb
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.csproj.AssemblyReference.cache
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.AssemblyInfoInputs.cache
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.AssemblyInfo.cs
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.csproj.CoreCompileInputs.cache
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.dll
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\refint\DelegadosPredicados.dll
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.pdb
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\DelegadosPredicados.genruntimeconfig.cache
+C:\Users\Laura Perez\source\repos\DelegadosPredicados\DelegadosPredicados\obj\Debug\net6.0\ref\DelegadosPredicados.dll
